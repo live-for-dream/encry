@@ -34,7 +34,7 @@
  *                  <appro@fy.chalmers.se>
  */
 
-
+#ifdef __x86_64
 #ifndef AES_DEBUG
 # ifndef NDEBUG
 #  define NDEBUG
@@ -1070,3 +1070,5 @@ void AES_decrypt(const unsigned char *in, unsigned char *out,
         ((u32)Td4[(s0 >> 24)       ] << 24) ^
         rk[3];
 }
+#endif
+

@@ -27,7 +27,7 @@
 
 /* Note: rewritten a little bit to provide error control and an OpenSSL-
    compatible API */
-
+#ifndef __x86_64
 #ifndef AES_DEBUG
 # ifndef NDEBUG
 #  define NDEBUG
@@ -1361,3 +1361,4 @@ int private_AES_set_decrypt_key(const unsigned char *userKey, const int bits,
 }
 
 #endif /* AES_ASM */
+#endif

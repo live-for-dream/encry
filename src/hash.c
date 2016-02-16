@@ -158,3 +158,7 @@ void set_index(uint size) {
     }
 
 }
+
+uint get_prime() {
+    return primes[prim_idx];
+}
